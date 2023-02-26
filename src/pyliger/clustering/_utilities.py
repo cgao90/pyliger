@@ -58,7 +58,6 @@ def run_pynndescent(H, k, num_trees=None):
     return H_knn
 
 
-@njit
 def cluster_vote(clusts, H_knn, k):
     """"""
     for i in range(H_knn.shape[0]):
